@@ -49,6 +49,9 @@ jspm_packages/
 .yarn/cache
 .yarn/install-state.gz
 
+# Lockfiles for other package managers
+package-lock.json
+
 # dotenv environment variables file
 .env
 .env.test
