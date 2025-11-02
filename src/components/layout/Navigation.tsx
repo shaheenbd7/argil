@@ -46,7 +46,7 @@ const Navigation: React.FC = () => {
   const drawer = (
     <Box sx={{ width: 250 }} onClick={handleDrawerToggle}>
       <Typography variant="h6" sx={{ my: 2, textAlign: 'center' }}>
-        Research Lab
+        Argil Research Institute
       </Typography>
       <List>
         {navItems.map((item) => (
@@ -74,12 +74,21 @@ const Navigation: React.FC = () => {
             borderBottom: '1px solid rgba(0, 0, 0, 0.08)',
           }}
         >
-          <Toolbar>
+          <Toolbar
+            onClick={isMobile ? handleDrawerToggle : undefined}
+            sx={{
+              ...(isMobile && {
+                cursor: 'pointer',
+                '&:hover': {
+                  bgcolor: 'rgba(255, 255, 255, 0.05)',
+                },
+              }),
+            }}
+          >
             {isMobile ? (
               <>
                 <IconButton
                   edge="start"
-                  onClick={handleDrawerToggle}
                   sx={{
                     mr: 2,
                     color: 'white',

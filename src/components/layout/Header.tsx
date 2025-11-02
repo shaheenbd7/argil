@@ -35,16 +35,6 @@ const Header: React.FC = () => {
             </Typography>
           </motion.div>
         </Box>
-        <Box sx={{ flexGrow: 1 }} />
-        <motion.div
-          initial={{ x: 50, opacity: 0 }}
-          animate={{ x: 0, opacity: 1 }}
-          transition={{ delay: 0.5, duration: 0.6 }}
-        >
-          <Typography variant="body2" color="inherit">
-            Advancing Scientific Innovation
-          </Typography>
-        </motion.div>
       </Toolbar>
     </AppBar>
   );
