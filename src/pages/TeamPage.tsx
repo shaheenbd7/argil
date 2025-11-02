@@ -13,6 +13,7 @@ import { motion } from 'framer-motion';
 import { Email, LinkedIn } from '@mui/icons-material';
 import teamMembersData from '../resources/team-members.json';
 import { mockProjects } from '../mock-data';
+import { getImageSrc } from '../utils/imageUtils';
 
 const TeamPage: React.FC = () => {
   const getProjectCount = (researcherId: string) => {
@@ -61,7 +62,7 @@ const TeamPage: React.FC = () => {
                 <Card elevation={3} sx={{ height: '100%' }}>
                   <CardContent sx={{ textAlign: 'center', pb: 3 }}>
                     <Avatar
-                      src={researcher.photoUrl}
+                      src={getImageSrc(researcher.photoUrl)}
                       sx={{
                         width: 120,
                         height: 120,
