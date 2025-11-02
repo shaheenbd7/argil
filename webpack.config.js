@@ -20,6 +20,10 @@ module.exports = {
         use: [
           {
             loader: 'file-loader',
+            options: {
+              outputPath: 'images/',
+              publicPath: '/images/',
+            },
           },
         ],
       },

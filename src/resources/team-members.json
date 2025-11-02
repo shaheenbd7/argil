@@ -1,0 +1,74 @@
+[
+  {
+    "id": "researcher-1",
+    "name": "Md Ashiqul Islam",
+    "title": "Director of Research",
+    "bio": "Assistant Professor, Mawlana Bhashani Science and Technology University (MBSTU),Santosh, Tangail",
+    "photoUrl": "resources/images/profile_pic_ashiqul.png",
+    "email": "shaheen.cse20@gmail.com",
+    "specialties": ["Materials Science", "Sustainable Chemistry", "Green Technology"]
+  },
+  {
+    "id": "researcher-2",
+    "name": "Dr. Michael Rodriguez",
+    "title": "Lead Environmental Scientist",
+    "bio": "Environmental scientist specializing in climate impact assessment and sustainable development",
+    "photoUrl": "resources/images/sample-research-photo-2.jpg",
+    "email": "michael.rodriguez@argil-research.org",
+    "specialties": ["Environmental Science", "Climate Research", "Sustainable Development"]
+  },
+  {
+    "id": "researcher-3",
+    "name": "Prof. Emily Watson",
+    "title": "Senior Research Fellow",
+    "bio": "Professor with expertise in data analysis and computational modeling",
+    "photoUrl": "resources/images/sample-research-photo-3.jpg",
+    "email": "emily.watson@argil-research.org",
+    "specialties": ["Data Science", "Computational Modeling", "Statistics"]
+  },
+  {
+    "id": "researcher-4",
+    "name": "Dr. Ahmed Hassan",
+    "title": "Research Associate",
+    "bio": "Materials engineer focused on developing next-generation sustainable materials",
+    "photoUrl": "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=400&q=80",
+    "email": "ahmed.hassan@argil-research.org",
+    "specialties": ["Materials Engineering", "Sustainability", "Innovation"]
+  },
+  {
+    "id": "researcher-5",
+    "name": "Dr. Lisa Park",
+    "title": "Senior Materials Engineer",
+    "bio": "Expert in polymer science and sustainable material development",
+    "photoUrl": "/resources/images/sample-research-photo-3.jpg",
+    "email": "lisa.park@argil-research.org",
+    "specialties": ["Polymer Science", "Materials Engineering", "Sustainability"]
+  },
+  {
+    "id": "researcher-6",
+    "name": "Dr. James Wilson",
+    "title": "Environmental Policy Analyst",
+    "bio": "Bridging science and policy to drive sustainable environmental solutions",
+    "photoUrl": "/resources/images/sample-research-photo-5.jpg",
+    "email": "james.wilson@argil-research.org",
+    "specialties": ["Environmental Policy", "Sustainability", "Climate Policy"]
+  },
+  {
+    "id": "researcher-7",
+    "name": "Dr. Maria Sanchez",
+    "title": "Research Chemist",
+    "bio": "Chemist specializing in green chemistry and sustainable reactions",
+    "photoUrl": "/resources/images/sample-research-photo-6.jpg",
+    "email": "maria.sanchez@argil-research.org",
+    "specialties": ["Green Chemistry", "Sustainable Chemistry", "Catalysis"]
+  },
+  {
+    "id": "researcher-8",
+    "name": "Prof. David Kim",
+    "title": "Computational Scientist",
+    "bio": "Leading computational modeling efforts for material discovery",
+    "photoUrl": "/resources/images/sample-research-photo-7.jpg",
+    "email": "david.kim@argil-research.org",
+    "specialties": ["Computational Chemistry", "Material Discovery", "Data Science"]
+  }
+]

@@ -68,9 +68,15 @@ const Navigation: React.FC = () => {
           position: 'sticky',
           top: 0,
           zIndex: 1100,
+          background: 'linear-gradient(135deg, rgba(255, 255, 255, 0.95) 0%, rgba(248, 250, 252, 0.95) 100%)',
+          backdropFilter: 'blur(10px)',
+          borderBottom: '1px solid rgba(0, 0, 0, 0.08)',
         }}
       >
-        <Box sx={{ bgcolor: 'background.paper' }}>
+        <Box sx={{
+          bgcolor: 'transparent',
+          background: 'linear-gradient(135deg, rgba(255, 255, 255, 0.1) 0%, rgba(248, 250, 252, 0.1) 100%)',
+        }}>
           <Tabs
             value={getActiveTab()}
             onChange={handleTabChange}
@@ -80,8 +86,28 @@ const Navigation: React.FC = () => {
             sx={{
               '& .MuiTab-root': {
                 minHeight: 64,
+                position: 'relative',
+                '&::before': {
+                  content: '""',
+                  position: 'absolute',
+                  top: 0,
+                  left: 0,
+                  right: 0,
+                  bottom: 0,
+                  background: 'linear-gradient(135deg, rgba(25, 118, 210, 0.1) 0%, rgba(66, 165, 245, 0.1) 100%)',
+                  opacity: 0,
+                  transition: 'opacity 0.3s ease',
+                  borderRadius: '8px',
+                },
+                '&:hover::before': {
+                  opacity: 1,
+                },
                 '&:hover': {
-                  bgcolor: 'action.hover',
+                  bgcolor: 'transparent',
+                  color: 'primary.main',
+                  transform: 'translateY(-2px)',
+                  transition: 'all 0.3s cubic-bezier(0.4, 0, 0.2, 1)',
+                  boxShadow: '0 4px 8px rgba(0, 0, 0, 0.12)',
                 },
               },
             }}
@@ -96,12 +122,19 @@ const Navigation: React.FC = () => {
                   display: { xs: 'block', md: 'inherit' },
                   flexDirection: 'row',
                   gap: 1,
+                  position: 'relative',
+                  zIndex: 1,
                   '& .MuiTab-iconWrapper': {
                     order: { xs: 2, md: 0 },
+                    transition: 'transform 0.3s ease',
+                  },
+                  '&:hover .MuiTab-iconWrapper': {
+                    transform: 'scale(1.1)',
                   },
                   '&:hover': {
-                    transform: 'scale(1.05)',
-                    transition: 'transform 0.3s ease',
+                    color: 'primary.dark',
+                    transform: 'translateY(-2px) scale(1.02)',
+                    transition: 'all 0.3s cubic-bezier(0.4, 0, 0.2, 1)',
                   },
                 }}
               />

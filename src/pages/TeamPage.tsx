@@ -11,7 +11,8 @@ import {
 } from '@mui/material';
 import { motion } from 'framer-motion';
 import { Email, LinkedIn } from '@mui/icons-material';
-import { mockResearchers, mockProjects } from '../mock-data';
+import teamMembersData from '../resources/team-members.json';
+import { mockProjects } from '../mock-data';
 
 const TeamPage: React.FC = () => {
   const getProjectCount = (researcherId: string) => {
@@ -54,7 +55,7 @@ const TeamPage: React.FC = () => {
         animate="show"
       >
         <Grid container spacing={4}>
-          {mockResearchers.map((researcher, index) => (
+          {teamMembersData.map((researcher, index) => (
             <Grid item xs={12} md={6} lg={4} key={researcher.id}>
               <motion.div variants={item} whileHover={{ y: -5 }} transition={{ type: 'spring', stiffness: 300 }}>
                 <Card elevation={3} sx={{ height: '100%' }}>
